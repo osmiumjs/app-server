@@ -21,9 +21,9 @@ const Joi = require('@hapi/joi');
 const R = require('ramda');
 
 /**
- * @class {ApiServer & Events}
+ * @class {AppServer & Events}
  */
-class ApiServer extends Events {
+class AppServer extends Events {
 	/** @type {Express} */
 	express;
 
@@ -364,4 +364,4 @@ class ApiServer extends Events {
 	}
 }
 
-module.exports = {ApiServer};
+module.exports = {AppServer};
